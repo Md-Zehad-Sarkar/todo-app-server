@@ -1,6 +1,6 @@
 # Todo App Server
 
-- Client Live link:
+- Client Live link: https://todo-app-client.netlify.app/
 
 ## Setup Express
 
@@ -109,4 +109,10 @@ app.listen(port, () => console.log(`Example app is listening on port ${port}.`))
 
 - now ready to deploy 
 - Make sure your are logged in with vercel
-- now command
+- now command : vercel
+- press : Y and enter
+- now select your scope and press enter
+- if you link an existing project press y .if you don't link your existing like a new one press N and enter.
+- give your project name set or press enter
+- locate your directory if right directory just press enter
+- now your server successfully deployed.
