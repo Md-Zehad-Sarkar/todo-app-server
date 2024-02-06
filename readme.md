@@ -1,6 +1,13 @@
 # Todo App Server
 
+- Client Live link:
+
 ## Setup Express
+
+### Technologies
+
+- Express
+- MongoDB
 
 #### Make directory
 
@@ -8,29 +15,34 @@ command on your terminal : mkdir project_name
 
 #### Go to your directory
 
-command on your terminal : cd project_name
+- command on your terminal : cd project_name
 
 #### Initialized your project
 
-command on your terminal : npm init -y
+- command on your terminal : npm init -y
 
 #### Install express and others you need
 
-command on your terminal : npm install express cors mongodb dotenv nodemon
+- command on your terminal : npm install express cors mongodb dotenv nodemon
 
 #### Open your project
 
-command on your terminal : code .
+- command on your terminal : code .
 
 #### Create an entry point
 
-create a file : index.js
+- create a file : index.js
 
 - your index.js
 
 const express = require('express');
 
+const cors = require ('cors');
+
 const app = express();
+
+app.use(cors());
+app.use(express.json())
 
 //create rest api
 
@@ -48,7 +60,7 @@ app.listen(port, () => console.log(`Example app is listening on port ${port}.`))
 
 #### Run your server
 
-command on your terminal : npm run start
+- command on your terminal : npm run start
 
 # CRUD operation
 
@@ -56,5 +68,3 @@ command on your terminal : npm run start
 - R: Read / Get
 - U: Update / Patch/Put
 - D: Delete / Delete
-
-
